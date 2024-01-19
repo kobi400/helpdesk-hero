@@ -1,0 +1,22 @@
+<HomeScreen>:
+    name: 'home'
+   BoxLayout:
+        orientation: 'vertical'
+        size_hint_y: None
+        height: self.minimum_height
+        adaptive_height: True
+        canvas:
+            Color:
+                rgba: app.theme_cls.primary_color
+
+        MDTextField:
+            hint_text: 'Chat here'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.7}
+            size_hint: (0.3, None)
+
+        MDRaisedButton:
+            text: 'Press here'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+            size_hint: (0.3, None)
+            on_release:
+                root.manager.current = 'login'

@@ -1,0 +1,41 @@
+<SignupScreen>:
+    name: 'signup'
+    FloatLayout:
+        orientation: 'vertical'
+        canvas:
+            Color:
+                rgba: app.theme_cls.primary_color
+
+        MDLabel:
+            text: 'HdH SignUp'
+            font_size: '20'
+            color: 'orange'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.7}
+            size_hint: (0.3, None)
+
+        MDTextField:
+            hint_text: 'Insert Email Address'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.6}
+            size_hint: (0.3, None)
+
+        MDTextField:
+            hint_text: 'Enter Phone Number'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+            size_hint: (0.3, None)
+
+        MDTextField:
+            hint_text: 'Create New Password'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.4}
+            size_hint: (0.3, None)
+
+        MDTextField:
+            hint_text: 'Create New Password'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.3}
+            size_hint: (0.3, None)
+
+
+        MDRectangleFlatButton:
+            text: 'Sign-in'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.2}
+            size_hint: (0.2, None)
+            on_release: app.root.current = 'login'
