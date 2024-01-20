@@ -17,13 +17,16 @@
             hint_text: 'Insert Email Address'
             pos_hint: {'center_x': 0.5, 'center_y': 0.6}
             size_hint: (0.3, None)
+            mode: 'round'
 
         MDTextField:
+            mode: 'round'
             hint_text: 'Enter Phone Number'
             pos_hint: {'center_x': 0.5, 'center_y': 0.5}
             size_hint: (0.3, None)
 
         MDTextField:
+            mode: 'round'
             hint_text: 'Create New Password'
             pos_hint: {'center_x': 0.5, 'center_y': 0.4}
             size_hint: (0.3, None)
@@ -32,10 +35,10 @@
             hint_text: 'Create New Password'
             pos_hint: {'center_x': 0.5, 'center_y': 0.3}
             size_hint: (0.3, None)
+            mode: 'round'
 
-
-        MDRectangleFlatButton:
-            text: 'Sign-in'
+        MDRaisedButton:
+            text: 'Create Account'
             pos_hint: {'center_x': 0.5, 'center_y': 0.2}
             size_hint: (0.2, None)
             on_release: app.root.current = 'login'

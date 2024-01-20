@@ -1,0 +1,27 @@
+<HomeScreen>:
+    name: 'home'
+    FloatLayout:
+        spacing: dp(10)
+        padding: dp(20)
+        orientation: 'vertical'
+
+        MDLabel:
+            text: 'HdH Chat'
+            font_size: '20'
+            color: 'orange'
+            pos_hint: {'center_x': 0.55, 'center_y': 0.8}
+            size_hint: (0.3, None)
+
+
+        MDTextField:
+            id: chat_text_field
+            mode: 'round'
+            hint_text: 'Chat here'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.2}
+            icon_right: 'send-circle'
+            size_hint: (0.4, None)
+            on_icon_right:
+                app.root.clear_text()
+
+
+

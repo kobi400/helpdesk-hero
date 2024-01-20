@@ -11,19 +11,26 @@
             pos_hint: {'center_x': 0.55, 'center_y': 0.8}
             size_hint: (0.3, None)
 
-        MDTextField:
-            hint_text: 'Enter ID'
-            pos_hint: {'center_x': 0.5, 'center_y': 0.7}
-            size_hint: (0.3, None)
 
         MDTextField:
-            hint_text: 'Enter Password'
-            pos_hint: {'center_x': 0.5, 'center_y': 0.6}
+            mode: 'round'
+            hint_text: 'Enter ID'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.55}
             size_hint: (0.3, None)
+            adaptive_height: True
+
+        MDTextField:
+            hint_text: "Enter your Password"
+            mode: 'round'
+            helper_text_mode: "persistent"
+            pos_hint: {'center_x': 0.5, 'center_y': 0.45}
+            size_hint: (0.3, None)
+            adaptive_height: True
 
         MDRaisedButton:
             text: 'Login'
-            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+            mode: 'round'
+            pos_hint: {'center_x': 0.495, 'center_y': 0.3}
             color: 'orange'
             size_hint: (0.2, None)
             on_release: app.root.current = 'home'
@@ -31,7 +38,8 @@
 
         MDTextButton:
             text: "New User? Sign Up!"
-            pos_hint: {'center_x': 0.5, 'center_y': 0.40}
-            font_size: '15'
+            pos_hint: {'center_x': 0.51, 'center_y': 0.20}
+            font_size: '12'
             size_hint: (0.2, None)
             on_release: app.root.current = 'signup'
+            adaptive_height: True
